@@ -2,6 +2,7 @@ var mongoose = require("mongoose");
 
 var Schema = mongoose.Schema;
 
+//This is the schema from Mongoose
 var ArticleSchema = new Schema({
   headline: {
     type: String,
@@ -21,6 +22,7 @@ var ArticleSchema = new Schema({
   }]
 });
 
+//Here it is turned into a model
 var Article = mongoose.model("Article", ArticleSchema);
 
 module.exports = Article;
